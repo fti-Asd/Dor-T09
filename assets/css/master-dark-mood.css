@@ -15,20 +15,28 @@ body{
     color: white;
 }
 
+input:focus {
+    outline:none;
+}
+
 img{
     width: 100%;
 }
 
-.desktop-image{
-    background-size: cover;
+.todo-container{
+    background-image: url("../../public/images/_general/bg-desktop-dark.jpg");
+    background-size: clamp(80rem, calc(30rem + 300vw) , 100%);
+    background-position: top;
+    background-repeat: no-repeat;
+
+    min-width: 250px;
+
 }
 
 .todo-list{
     max-width: 430px;
-    padding: 20px 10px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,-35%);
+    min-width: 200px;
+    padding-top: clamp(3rem, calc(2rem + 10vw) ,20rem);
 }
 
 .form-control.creat-input{
@@ -116,21 +124,16 @@ a:hover{
 /*******************RESPONSIVE**********************/
 
 @media(max-width:1440px) {
-    .desktop-image{
-    }
-
-    .todo-list{
-        transform: translate(-50%,-10%);
-    }
 }
 
 @media(max-width:992px) {
-
-    .todo-list{
-    }
+    /*.desktop-image-container{*/
+    /*    background-size: 150%;*/
+    /*}*/
 }
 
 @media(max-width:768px) {
+
     .links-text-boxes{
         position: absolute;
         bottom: -70px;
@@ -163,9 +166,6 @@ a:hover{
 }
 
 @media(max-width:575px) {
-    .todo-list{
-        transform: translate(-50%,-5%);
-    }
 }
 
 
