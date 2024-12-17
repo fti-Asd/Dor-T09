@@ -10,101 +10,129 @@
 
 </head>
 <body>
-    <main>
-        <div class="container-fluid p-0 m-0 todo-container">
-            <div class="container">
-                <div class="todo-list mx-auto">
-                    <div class="row g-3">
-                        <div class="col-md-12">
-                            <div class="text-and-sun d-flex align-items-center justify-content-between">
-                                <div class="to-do-box"><h5 class="card-title">T O D O</h5></div>
+<main>
+    <div class="container-fluid p-0 m-0 todo-container">
+        <div class="container-fluid p-0 m-0 bg-image-container">
+            <img src="./public/images/_general/bg-desktop-dark.jpg" alt="bg-desktop-dark">
+        </div>
+        <div class="container position-relative">
+            <div class="todo-list position-absolute">
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        <div class="text-and-sun d-flex align-items-center justify-content-between">
+                            <div class="to-do-box">
+                                <h5 class="card-title">T O D O</h5>
+                            </div>
 
-                                <div class="sun-box"><a href="./index-light-mood.html"><img
-                                        src="public/images/_general/icon-sun.svg" class="card-img sun" alt="sun"
-                                        title="Dark Mood"></a></div>
+                            <div class="sun-box">
+                                <a href="index-light-mood.html">
+                                    <img src="public/images/_general/icon-sun.svg" class="card-img sun" alt="sun" title="Dark Mood">
+                                </a>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-12">
-                            <ul class="list-group creat-text">
-                                <li class="list-group-item padding-b-t-li">
-                                    <input class="form-check-input me-1 mt-2 mb-1" type="radio" name="listGroupRadio" checked>
-
-                                    <label class="form-check-label w-75">
-                                        <input class="form-control form-control-sm p-0 creat-input bg-transparent" type="text"
-                                               placeholder="Create new todo . . ." aria-label=".form-control-sm example">
-                                    </label>
+                    <div class="col-md-12">
+                        <div class="add-todo-input">
+                            <ul class="list-group">
+                                <li class="list-group-item shadow-lg">
+                                    <input class="form-control p-0 bg-transparent" type="text"
+                                           placeholder="Create new todo . . ." aria-label=".form-control-sm example">
                                 </li>
                             </ul>
                         </div>
+                    </div>
 
-                        <div class="col-md-12">
-                            <div class="list-of-chosen">
-                                <ul class="list-group plan text-nowrap">
-                                    <li class="list-group-item padding-y-li">
-                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" checked>
+                    <div class="col-md-12">
+                        <div class="list-of-chosen">
+                            <ul class="list-group shadow-lg">
+                                <li class="list-group-item d-flex align-items-center gap-2">
+                                    <input class="form-check-input me-1" type="radio" id="input-radio1" name="listGroupRadio" checked>
+                                    <label for="input-radio1" class="check-label"></label>
 
-                                        <label class="form-check-label text-decoration-line-through">Complete online JavaScript
-                                            course</label>
-                                    </li>
-                                    <li class="list-group-item padding-y-li">
-                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio">
+                                    <label class="todo-text text-decoration-line-through" for="input-radio1">Complete online JavaScript course</label>
+                                </li>
 
-                                        <label class="form-check-label">Jog around park 3x</label>
-                                    </li>
-                                    <li class="list-group-item padding-y-li">
-                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio">
+                                <li class="list-group-item d-flex align-items-center gap-2">
+                                    <input class="form-check-input me-1" type="radio" id="input-radio2" name="listGroupRadio">
+                                    <label for="input-radio2" class="check-label"></label>
 
-                                        <label class="form-check-label">10 minutes meditation</label>
-                                    </li>
-                                    <li class="list-group-item padding-y-li">
-                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio">
+                                    <label class="todo-text" for="input-radio2">Jog around park 3x</label>
+                                </li>
 
-                                        <label class="form-check-label">Read for 1 hour</label>
-                                    </li>
-                                    <li class="list-group-item padding-y-li">
-                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio">
+                                <li class="list-group-item d-flex align-items-center gap-2">
+                                    <input class="form-check-input me-1" type="radio" id="input-radio3" name="listGroupRadio">
+                                    <label for="input-radio3" class="check-label"></label>
 
-                                        <label class="form-check-label">Pickup processes</label>
-                                    </li>
-                                    <li class="list-group-item padding-y-li">
-                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio">
+                                    <label class="todo-text" for="input-radio3">10 minutes meditation</label>
+                                </li>
 
-                                        <label class="form-check-label">Complete Todo App on Frontend Mentor</label>
-                                    </li>
-                                    <li class="list-group-item padding-y-li">
-                                        <div class="links-boxes">
-                                            <div class="left-time"><p class="card-text">5 items left</p></div>
+                                <li class="list-group-item d-flex align-items-center gap-2">
+                                    <input class="form-check-input me-1" type="radio" id="input-radio4" name="listGroupRadio">
+                                    <label for="input-radio4" class="check-label"></label>
 
-                                            <div class="links-text-boxes">
-                                                <a href="#" class="card-link blue-color"> All</a>
+                                    <label class="todo-text" for="input-radio4">Read for 1 hour</label>
+                                </li>
 
-                                                <a href="#" class="card-link"> Active</a>
+                                <li class="list-group-item d-flex align-items-center gap-2">
+                                    <input class="form-check-input me-1" type="radio" id="input-radio5" name="listGroupRadio">
+                                    <label for="input-radio5" class="check-label"></label>
 
-                                                <a href="#" class="card-link"> Completed</a>
-                                            </div>
+                                    <label class="todo-text" for="input-radio5">Pickup processes</label>
+                                </li>
 
-                                            <div class="Complete-link">
-                                                <a href="#" class="card-link">Clear Complete</a>
-                                            </div>
+                                <li class="list-group-item d-flex align-items-center gap-2">
+                                    <input class="form-check-input me-1" type="radio" id="input-radio6" name="listGroupRadio">
+                                    <label for="input-radio6" class="check-label"></label>
+
+                                    <label class="todo-text" for="input-radio6">Complete Todo App on Frontend Mentor</label>
+                                </li>
+
+                                <li class="list-group-item">
+                                    <div class="links-boxes">
+                                        <div class="left-time"><p class="card-text">5 items left</p></div>
+
+                                        <div class="d-none d-lg-block">
+                                            <ul class="list-unstyled d-flex justify-content-center align-items-center gap-2">
+                                                <li><a href="#" class="blue-color"> All</a></li>
+
+                                                <li><a href="#"> Active</a></li>
+
+                                                <li><a href="#"> Completed</a></li>
+                                            </ul>
                                         </div>
-                                    </li>
-                                </ul>
-                                <div class="col-md-12">
-                                    <div class="Drag-Drop-text pt-4">
-                                        Drag and Drop to recorder list
+
+                                        <div class="">
+                                            <a href="#">Clear Complete</a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 seperate-links">
+                        <ul class="list-unstyled d-flex d-lg-none justify-content-center align-items-center gap-4 round rounded-2 shadow-lg py-2">
+                            <li><a href="#" class="blue-color"> All</a></li>
+
+                            <li><a href="#"> Active</a></li>
+
+                            <li><a href="#"> Completed</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="Drag-Drop-text">
+                            Drag and Drop to recorder list
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-    <script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </div>
+</main>
+<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
 
 
